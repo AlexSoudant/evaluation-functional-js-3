@@ -1,7 +1,7 @@
 const expect = require('chai').expect;
 const program = require('../src/exercise2');
 
-describe.only(`${program.title}`, function () {
+describe(`${program.title}`, function () {
 
   it('Function yolo with mysterious parameter should return a list of messages', function () {
 
