@@ -29,3 +29,12 @@ module.exports = {
   title: 'Exercise 2',
   run: yolo
 };
+
+// const whereIsMyMind = "???";
+
+// const output = [
+//   "0 not known character(s) ",
+//   "3 male character(s) William, Gaius, Lee",
+//   "2 female character(s) Kara, Laura",
+//   "2 not applicable character(s) Number six, Number height"
+// ];
