@@ -8,12 +8,16 @@ const sortProduct = input => {
   .map(product => product = {name: product.name, year: parseInt(moment(product.dateAdded).format('YYYY')), monthOfYear: parseInt(moment(product.dateAdded).format('M')), quantity: product.quantity
   })
   .reduce( (acc, product) => {
-
-    acc[product.name].push(product)
-
-    // acc[product.name] = product
+    if (!acc[product.name]) {
+      acc[product.name] = []
+    }
+      acc[product.name].push(product)
+      console.log("AZY LALAL", acc[product.name])
     return acc
   }, {})
+  //.sort(product => product.year)
+
+  return filtered_input
 
   console.log("filtered_input", filtered_input)
 };
